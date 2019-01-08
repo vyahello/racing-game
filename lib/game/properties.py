@@ -1,5 +1,8 @@
+import os
 from enum import Enum
 from typing import Iterable
+
+_images: str = os.path.join('lib/images/')
 
 
 class Colors(Enum):
@@ -58,15 +61,15 @@ class Display(Enum):
 class Images(Enum):
     """Represent game images."""
 
-    car: str = 'car.jpg'
-    car_one: str = 'car1.jpg'
-    car_two: str = 'car2.jpg'
-    car_three: str = 'car3.jpg'
-    car_four: str = 'car4.jpg'
-    car_five: str = 'car5.jpg'
-    car_six: str = 'car6.jpg'
-    grass: str = 'grass.jpg'
-    yellow_strip: str = 'yellow_strip.jpg'
-    strip: str = 'strip.jpg'
-    back: str = 'back.jpg'
-    back_alternative: str = 'back_alternative.jpg'
+    car: str = f'{_images}car.jpg'
+    car_one: str = f'{_images}car1.jpg'
+    car_two: str = f'{_images}car2.jpg'
+    car_three: str = f'{_images}car3.jpg'
+    car_four: str = f'{_images}car4.jpg'
+    car_five: str = f'{_images}car5.jpg'
+    car_six: str = f'{_images}car6.jpg'
+    grass: str = f'{_images}grass.jpg'
+    yellow_strip: str = f'{_images}yellow_strip.jpg'
+    strip: str = f'{_images}strip.jpg'
+    back: str = f'{_images}back.jpg'
+    back_alternative: str = f'{_images}back_alternative.jpg'
