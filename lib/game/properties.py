@@ -52,3 +52,21 @@ class Display(Enum):
 
     width: int = 800
     height: int = 600
+    caption: str = 'Racing Game'
+
+
+class Images(Enum):
+    """Represent game images."""
+
+    car: str = 'car.jpg'
+    car_one: str = 'car1.jpg'
+    car_two: str = 'car2.jpg'
+    car_three: str = 'car3.jpg'
+    car_four: str = 'car4.jpg'
+    car_five: str = 'car5.jpg'
+    car_six: str = 'car6.jpg'
+    grass: str = 'grass.jpg'
+    yellow_strip: str = 'yellow_strip.jpg'
+    strip: str = 'strip.jpg'
+    back: str = 'back.jpg'
+    back_alternative: str = 'back_alternative.jpg'
