@@ -1,6 +1,26 @@
-from typing import Type
-from pygame import display, time, Surface
+from typing import Type, Union, Tuple
+from pygame import display, time, Surface, Rect
 from lib.game.properties import Display
+
+
+class GameSurface:
+    """A surface for a game."""
+
+    def __init__(self, surface: Surface) -> None:
+        self._surface = surface
+
+    @property
+    def surface(self) -> Surface:
+        return self._surface
+
+    def blit(self, source: Union[str, Surface], dest: Union[Tuple[int, int], Rect]) -> Rect:
+        return self._surface.blit(
+            source,
+            dest
+        )
+
+    def fill(self, color: Tuple[int, int, int]) -> Rect:
+        return self._surface.fill(color)
 
 
 class GameDisplay:
