@@ -31,13 +31,13 @@ class GameDisplay:
         self._display = display
 
     def set_title(self) -> None:
-        self._display.set_caption(Display.caption.value)
+        self._display.set_caption(self._option.caption.value)
 
     def set_size(self) -> Surface:
         return self._display.set_mode(
             (
-                Display.width.value,
-                Display.height.value
+                self._option.width.value,
+                self._option.height.value
             )
         )
 
