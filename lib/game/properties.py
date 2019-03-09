@@ -73,3 +73,9 @@ class Images(Enum):
     strip: str = f'{_images}strip.jpg'
     back: str = f'{_images}back.jpg'
     back_alternative: str = f'{_images}back_alternative.jpg'
+
+
+class Car(Enum):
+    """Represents single car element."""
+
+    width: int = 56
